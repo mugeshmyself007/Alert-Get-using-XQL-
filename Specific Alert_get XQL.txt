@@ -1,0 +1,4 @@
+dataset = alerts
+| filter alert_name = "*name of the alert*"
+| fields alert_name , alert_id , incident_id , action , *
+| sort desc _time
